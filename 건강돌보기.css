@@ -1,0 +1,48 @@
+body{
+    margin: 50px auto;
+    width: 1000px;
+}
+header{
+    background: rgb(231, 114, 134);
+    overflow: hidden;
+}
+h1{
+    width: 300px;
+    float: left;
+    color: white;
+    padding: 20px;
+}
+nav{
+    width: 500px;
+    float: right;
+    margin-top: 38px;
+    /* 크기 잡고 플롯해줘야함*/
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+section{
+      border: 4px solid #eee;
+      padding: 20px;
+}
+article ul{
+    list-style: square;
+}
+article ol{
+    list-style: lower-alpha;
+}
+.b{
+    font-weight: bold;
+}
+footer{
+    background: linear-gradient(to right, #1f5889, #237596);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}

@@ -1,0 +1,71 @@
+body{
+    font-family: "맑은 고딕", "고딕", "굴림";
+  }
+  #container{
+    width: 800px;
+    margin: 0 auto;
+  }
+  header{
+    background: rgb(231, 114, 134);
+    overflow: hidden;
+    /* 크기가 없을때 float했을 때 안보이면 부모한테 가서 overflow하면 잡아줘서 보인다.
+     히든인지 오토인지 상관없음*/
+  }
+  header img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    float: left;
+  }
+  nav{ 
+    width: 500px;
+    float: right;
+    margin-top: 4px;
+  }
+  nav ul{
+    list-style: none;
+  }
+  nav li{
+    display: inline-block;
+    padding: 10px;
+  }
+  nav a{
+    text-decoration: none;
+    color: white;
+  }
+  section{
+    width: 640px;
+    float: left;
+    margin-bottom: 5px;
+  }
+  section h2{
+    padding-left: 10px;
+  }
+  article{
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 10px;
+    width: 288px;
+    height: 280px;
+    float: left;
+  }
+ article p{
+  text-indent: 16px;
+ }
+aside{
+  float: right;
+  width: 150px;
+  margin: 77px 0 0 5px;
+}
+aside img{
+  width: 150px;
+  height: 201px;
+}
+footer{
+  clear: both;
+  background: linear-gradient(to right, #1f5889, #237596);
+  color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 15px;
+}

@@ -1,0 +1,70 @@
+body{
+    font-family: "맑은 고딕", "고딕", "굴림";
+    background: #eee;
+}
+#container{
+    width: 800px;
+    margin: 0 auto;
+}
+header{
+    background: blue;
+    overflow: hidden;
+    /*자식이 사라져서 부모가 안보임 - 그래서 잡아주기위해overflow 처리 
+    오버플로 히든 - 크기 있을때 넘친 애들 안보임
+                  크게 없을땐 오버된 자식 잡아줌?*/
+    padding: 10px;
+}
+header img{
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+nav{
+    width: 500px;
+    float: right;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    padding: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+section{
+    width: 600px;
+    float: left;
+}
+section h2{
+    margin-left: 10px;
+}
+article{
+    border: 1px solid plum;
+    margin: 5px;
+    width: 266px;
+    height: 300px;
+    padding: 10px;
+    float: left;
+}
+aside{
+    background-color: antiquewhite;
+    width: 150px;
+    float: right;
+    margin-top: 73px;
+    margin-right: 10px;
+}
+aside img{
+    width: 150px;
+    height: 210px;
+}
+footer{
+    background-color: blueviolet;
+    color: white;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
