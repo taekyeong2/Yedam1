@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>input-type</title>
+    <link href="css/input-type.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="id1">아이디 :</label>
+            <input id="id1" type="text" size="10">
+            <label for="pw1">비밀번호 :</label>
+            <input id="pw1" type="password" size="10">
+            <label for="btn1"></label>
+            <input id="btn1" type="button" value="로그인">
+        </fieldset>
+        <fieldset class="wi">
+            <legend>개인 정보</legend>
+            <ul>
+                <li><label for="id2">아이디 : <span class="red">*</span></label>
+                    <input id="id2" type="text" size="10"></li>
+                <li><label for="pw2">비밀번호 : <span class="red">*</span></label>
+                    <input id="pw2" type="password"></li>
+                <li><label for="pw3">비밀번호 확인 : <span class="red">*</span></label>
+                    <input id="pw3" type="password"></li>
+                <li><label for="name">이름 : <span class="red">*</span></label>
+                    <input id="name" type="text"></li>
+                <li><label for="mail">메일 주소 : <span class="red">*</span></label>
+                    <input id="mail" type="email" size="20"></li>
+                <li><label for="url">홈페이지 주소 :</label>
+                    <input id="url" type="url"></li>
+                <li><label for="post">우편번호 :</label>
+                    <input id="post" type="text" size="3">-<input id="post" type="text" size="3">
+                    <input id="btn2" type="button" value="우편번호 검색"></li>               
+                <li><label for="home">집주소 :</label>
+                    <input id="home" type="text" size="40"></li>
+                <li><label for="tel">연락처 :</label>
+                    <input id="tel" type="tel"></li>                                                                                                                         
+            </ul>
+        </fieldset>
+        <fieldset>
+            <label for="ser">검색 :</label>
+            <input id="ser" type="search">
+            <label for="btn3"></label>
+            <input id="btn3" type="button" value="검색">
+            <label for="btn4"></label>
+            <input id="btn4" type="button" value="다시입력">
+        </fieldset>
+        <fieldset class="wi">
+            <legend>등록 정보</legend>
+            <ul>
+                <li><label for="peo">참여인원<small>(최대10명)</small>:</label>
+                    <input id="peo" type="number" value="1" min="0" max="10" step="1"></li>
+                <li><label for="help">지원물품<small>(1인당 5개)</small>:</label>
+                    <input id="help" type="number" value="1" min="0" max="50" step="5"></li>
+                    <li><label for="hope">희망 단계<small>(상,중,하)</small>:</label>
+                    <input id="hope" type="range" value="1" min="1" max="3" step="1"></li>
+                <li><label for="file">첨부파일 선택 : </label>
+                    <input id="file" type="file"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>수강 과목을 선택하세요(1과목 선택 가능)</legend>
+            <ul>
+                <li><label for="col">선호색상</label>
+                    <input id="col" type="color" value="#00ff00"></li>
+                <li>신청 과목<small>(회화)</small>
+                    <label><input type="radio" name="radio" value="eb">영어회화(초급)</label>
+                    <label><input type="radio" name="radio" value="em">영어회화(중급)</label>
+                    <label><input type="radio" name="radio" value="eh">영어회화(고급)</label></li>
+                <li>관심분야는?<small>(다수선택)</small>
+                    <label><input type="checkbox" name="chek1" value="tw" checked>Twitter</label>
+                    <label><input type="checkbox" name="chek2" value="fa">Facebook</label>
+                    <label><input type="checkbox" name="chek3" value="in">Instagram</label></li>
+            </ul>
+        </fieldset>
+            <div>
+                <input type="submit" value="전송">
+                <input type="reset" value="취소">
+            </div>
+    </form>
+</body>
+</html>

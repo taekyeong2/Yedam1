@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>지원서</title>
+    <link href="css/지원서.css" rel="stylesheet"> 
+</head>
+<body>
+    <div id="container">
+        <h1>국제 개발자 지원서</h1>
+        <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다</p>
+        <hr>
+        <form>
+            <fieldset id="line">
+                <legend>개인정보</legend>
+                <ul>
+                    <li><label for="name">이름</label>
+                        <input id="name" type="text" placeholder="공백 없이 입력하세요"></li>
+                    <li><label for="call">연락처</label>
+                        <input id="call" type="tel"></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>지원분야</legend>
+                <ul>
+                    <li><label><input type="radio" name="giwon" value="webp" checked>웹 퍼블리싱</label></li>
+                    <li><label><input type="radio" name="giwon" value="wepd">웹 어플리케이션 개발</label></li>
+                    <li><label><input type="radio" name="giwon" value="dev">개발 환경 개선</label></li>
+                </ul>
+            </fieldset> 
+            <fieldset>
+                <legend>지원 동기</legend>
+                <textarea cols="60" rows="5" placeholder="지원동기를 간략히 써 주세요"></textarea>
+                <div id="but">
+                    <button type="submit">접수하기</button>
+                    <button type="reset">다시쓰기</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

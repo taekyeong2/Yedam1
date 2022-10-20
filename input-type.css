@@ -1,0 +1,29 @@
+form{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+fieldset{
+    border: 2px solid rgb(170, 169, 169);
+    margin: 10px;
+}
+.red{
+    color: red;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin: 5px;
+}
+fieldset legend{
+    font-weight: bold ;
+}
+
+.wi label{
+    display: inline-block;
+    width: 130px;
+}
+div{
+    margin-left: 10px;
+}

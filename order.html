@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상품주문서</title>
+    <link href="css/order.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>상품 주문서</h1>
+        <form>
+            <fieldset class="d">
+                <legend>개인 정보</legend>
+                <ul>
+                    <li><label for="name">이름</label>
+                        <input id="name" type="text" placeholder="여백없이 입력"></li>
+                    <li><label for="cal">연락처</label>
+                        <input id="cal" type="tel" placeholder="연락가능한 번호"></li> 
+                    <li><label for="select">학과</label>
+                        <select id="select">
+                            <optgroup label="공과대학">
+                                <option value="archi">건축공학과</option>
+                                <option value="marchanic">기계공학과</option>
+                                <option value="indust">산업공학과</option>
+                                <option value="elec">전기전자공학과</option>
+                                <option value="computer" selected>컴퓨터공학과</option>
+                                <option value="chemical">화학공학과</option>
+                            </optgroup>
+                            <optgroup label="인문대학">
+                                <option value="history">사학과</option>
+                                <option value="lang">어문학과</option>
+                                <option value="philo">철학과</option>
+                            </optgroup>
+                        </select></li> 
+                        <li><label for="list"><small><small>관심분야(영어)</small></small></label>
+                            <input id="list" type="text" list="englist">
+                            <datalist id="englist">
+                                <option value="gram" label="문법">
+                                <option value="voca" label="어휘">
+                                <option value="speaking" label="회화">
+                                <option value="listening" label="리스닝">
+                                <option value="news" label="뉴스청취">
+                            </datalist></li>  
+                </ul>
+            </fieldset>
+            <fieldset class="d">
+                <legend>배송지 정보</legend>
+                <ul>
+                    <li><label for="adr">주소</label>
+                        <input id="adr" type="text" size="38"></li>
+                    <li><label for="tel">전화번호</label>
+                        <input id="tel" type="text"></li>
+                    <li><label for="memo">메모</label>
+                        <textarea id="memo" cols="40" rows="5"></textarea></li>    
+                </ul>
+            </fieldset>
+            <fieldset id="ju">
+                <legend>주문정보</legend>
+                <ul>
+                    <li><label><input type="checkbox" name="chk1" value="km">경북성주 참외<small>(5kg)</small></label>
+                        <input type="number" value="0" min="1" max="5">Box</li>
+                    <li><label><input type="checkbox" name="chk2" value="gr">경북영천 포도<small>(5kg)</small></label>
+                        <input type="number" value="0" min="1" max="5">Box</li>
+                    <li><label><input type="checkbox" name="chk3" value="wm">경북봉화 수박<small>(5kg)</small></label>
+                        <input type="number" value="0" min="1" max="5">Box</li>
+                </ul>
+            </fieldset>
+            <div id="cen">
+                <!-- <input class="but" type="submit" value="주문하기">
+                <input class="but" type="reset" value="다시 작성"> -->
+                <button type="submit">주문하기</button>
+                <button type="reset">다시 작성</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

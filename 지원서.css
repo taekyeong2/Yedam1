@@ -1,0 +1,38 @@
+#container{
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #777;
+}
+p{
+    font-size: 18px;
+}
+fieldset{
+    border: none;
+    margin: 10px 0px 15px 0px;
+    padding: 10px;
+}
+legend{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(69, 16, 192);
+}
+ul{
+    list-style: none;
+    margin: 20px;
+    padding-left: 10px;
+}
+li{
+    margin: 10px;
+}
+#line label{
+    display: inline-block;
+    width: 50px;
+    
+}
+textarea{
+    margin: 20px 10px 5px 50px;
+}
+#but{
+    margin-left: 50px;
+}
